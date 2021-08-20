@@ -17,7 +17,7 @@
         <div class="user">
             <img src="https://dkmrya02.github.io/img/img.jpg" alt="">
             <h3 class="name">Dilip Kumar</h3>
-            <p class="post">Front Web Developer</p>
+            <p class="post">Front End Web Developer</p>
         </div>
 
         <nav class="navbar">
@@ -32,5 +32,40 @@
     </header>
 
     <!-- header section ends here -->
+
+    <!-- content section starts here -->
+
+    <div class="container">
+
+        <section class="home" id="home">
+            <h3>Hi there...</h3>
+            <h3 class="name">My name is <span>Dilip Kumar</span></h3>
+            <h3 class="post">I am a <span class="typing-text">Front End Web Developer</span></h3>
+
+            <a href="#"><button class="btn">Hire Me</button></a>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-codepen"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- content section ends here -->
+
+    <!-- type.js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+
+    <script>
+        var type=new Typed('.typing-text',{
+            strings : ['web designer','front end web developer','photographer'],
+            typeSpeed : 120,
+            loop:true
+        });
+    </script>
 </body>
 </html>
