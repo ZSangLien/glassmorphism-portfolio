@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <!-- header section starts here -->
 
     <header>
@@ -62,8 +63,12 @@
 
             <div class="content">
                 <h3 class="name">My Name is <span>Dilip Kumar</span></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis labore laudantium explicabo pariatur minus assumenda quis blanditiis ex, harum quia perferendis excepturi officia quod corporis quisquam architecto nulla iure.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat optio facilis quibusdam dolores blanditiis, illo sunt. Autem nihil alias velit voluptas, dolor placeat, modi nostrum molestias esse ipsa itaque laborum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis labore laudantium
+                    explicabo pariatur minus assumenda quis blanditiis ex, harum quia perferendis excepturi officia quod
+                    corporis quisquam architecto nulla iure.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat optio facilis quibusdam dolores
+                    blanditiis, illo sunt. Autem nihil alias velit voluptas, dolor placeat, modi nostrum molestias esse
+                    ipsa itaque laborum?</p>
             </div>
             <div class="skills">
                 <div class="progress">
@@ -129,23 +134,23 @@
             </div>
         </section>
 
-         <!-- services section end-->
+        <!-- services section end-->
 
 
-          <!-- education section -->
+        <!-- education section -->
 
-          <section class="education" id="education">
-              <h1 class="heading">My Education</h1>
+        <section class="education" id="education">
+            <h1 class="heading">My Education</h1>
 
-              <div class="box-container">
+            <div class="box-container">
 
-                  <div class="box">
-                      <div class="year">2017-2018</div>
-                      <h3>Front End Web Developer</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, quis?</p>
-                  </div>
+                <div class="box">
+                    <div class="year">2017-2018</div>
+                    <h3>Front End Web Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, quis?</p>
+                </div>
 
-                  <div class="box">
+                <div class="box">
                     <div class="year">2017-2018</div>
                     <h3>Front End Web Developer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, quis?</p>
@@ -163,34 +168,34 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, quis?</p>
                 </div>
 
-              </div>
-          </section>
+            </div>
+        </section>
 
-         <!-- education section end-->
+        <!-- education section end-->
 
 
-          <!-- contact section -->
+        <!-- contact section -->
 
-          <section class="contact" id="contact">
-              <h1 class="heading">Contact Me</h1>
+        <section class="contact" id="contact">
+            <h1 class="heading">Contact Me</h1>
 
-              <div class="row">
-                  <form action="">
-                      <input type="text" class="box" placeholder="First Name">
-                      <input type="text" class="box" placeholder="Last Name">
-                      <input type="email" class="box" placeholder="Your Email">
-                      <input type="text" class="box" placeholder="Your Project">
-                      <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
-                      <input type="submit" value="message" class="btn">
-                  </form>
+            <div class="row">
+                <form action="">
+                    <input type="text" class="box" placeholder="First Name">
+                    <input type="text" class="box" placeholder="Last Name">
+                    <input type="email" class="box" placeholder="Your Email">
+                    <input type="text" class="box" placeholder="Your Project">
+                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
+                    <input type="submit" value="message" class="btn">
+                </form>
 
-                  <div class="content">
-                      <div class="icons">
-                          <h3><i class="fas fa-map-marker-alt"></i>Address</h3>
-                          <p>Delhi,India 110071</p>
-                      </div>
+                <div class="content">
+                    <div class="icons">
+                        <h3><i class="fas fa-map-marker-alt"></i>Address</h3>
+                        <p>Delhi,India 110071</p>
+                    </div>
 
-                      <div class="icons">
+                    <div class="icons">
                         <h3><i class="fas fa-envelope"></i>Email</h3>
                         <p>zsanglien007@gmail.com</p>
                     </div>
@@ -199,9 +204,9 @@
                         <h3><i class="fas fa-phone"></i>Phone</h3>
                         <p>+91 9899742615</p>
                     </div>
-                  </div>
-              </div>
-          </section>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- content section ends here -->
@@ -219,11 +224,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
 
     <script>
-        var type=new Typed('.typing-text',{
-            strings : ['web designer','front end web developer','photographer'],
-            typeSpeed : 120,
-            loop:true
+        var type = new Typed('.typing-text', {
+            strings: ['web designer', 'front end web developer', 'photographer'],
+            typeSpeed: 120,
+            loop: true
         });
+
+        let themeColor = document.querySelectorAll('.theme-toggler span');
+        themeColor.forEach(color => color.addEventListener('click', () => {
+            let background = color.style.background;
+            document.querySelector('body').style.background=background;
+        }));
     </script>
 </body>
+
 </html>
