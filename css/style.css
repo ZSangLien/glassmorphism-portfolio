@@ -28,6 +28,7 @@ body{
 section
 {
     padding: 1rem 7%;
+    min-height: 100%;
 }
 
 .btn
@@ -140,7 +141,6 @@ header .navbar ul li a:hover
 
 .home
 {
-    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,11 +202,6 @@ header .navbar ul li a:hover
 {
     background: rgba(255, 255, 255, .5);
     color: #555;
-}
-
-.about
-{
-    min-height: 100%;
 }
 
 .about .content h3
@@ -288,11 +283,6 @@ header .navbar ul li a:hover
     width: 70%;
 }
 
-.services
-{
-    min-height: 100%;   
-}
-
 .services .box-container
 {
     display: flex;
@@ -323,4 +313,55 @@ header .navbar ul li a:hover
     color: #eee;
     font-size: 1.3rem;
     padding: .5rem 5rem;
+}
+
+.education .box-container
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.education .box-container .box
+{
+    width: 30rem;
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+    border-left: .2rem solid #eee;
+}
+
+.education .box-container .box .year
+{
+    font-size: 2rem;
+    position: relative;
+    color: #eee;
+}
+
+.education .box-container .box .year::before
+{
+    content: '';
+    position: absolute;
+    top: .3rem;
+    left: -3.1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #fff;
+
+}
+
+.education .box-container .box h3
+{
+    font-size: 2rem;
+    color:#fff;
+    padding-top: 1rem;
+}
+
+.education .box-container .box p
+{
+    font-size: 1.3rem;
+    color:#eee;
+    padding: 1rem 0;
 }
